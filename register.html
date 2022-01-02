@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   /* signup page */
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   width: 50%;
+}
+* {box-sizing: border-box}
+input[type=text], input[type=password] {
+   width: 100%;
+   font-size: 28px;
+   padding: 15px;
+   margin: 5px 0 22px 0;
+   display: inline-block;
+   border: none;
+   background: #f1f1f1;
+}
+label{
+   font-size: 15px;
+}
+input[type=text]:focus, input[type=password]:focus {
+   background-color: #ddd;
+   outline: none;
+}
+hr {
+   border: 1px solid #f1f1f1;
+   margin-bottom: 25px;
+}
+button {
+   font-size: 18px;
+   font-weight: bold;
+   background-color: rgb(10, 119, 13);
+   color: white;
+   padding: 14px 20px;
+   margin: 8px 0;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   opacity: 0.9;
+}
+button:hover {
+   opacity:1;
+}
+.cancel {
+   padding: 14px 20px;
+   background-color: #ff3d2f;
+}
+.formContainer {
+   padding: 16px;
+}
+.formContainer p{
+   font-size: 28px;
+}
+.verticalLine {
+   height: 780px;
+   border-left: 1px solid #000900;
+   position: absolute;
+   left: 55%;
+}
+/* login page */
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:#0a5a80ba;  
+    font-family: 'Arial';  
+}  
+.login{  
+   width: 482px;  
+   overflow: hidden;  
+   margin: 10%;  
+   margin: 20 0 0 450px;  
+   padding: 80px;  
+   background: #23463f;  
+   border-radius: 15px ;  
+          
+}  
+h2{  
+    text-align: center;  
+    color: black;  
+    padding: 20px;  
+}  
+label{  
+    color: #10c5a4;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 150px;  
+    height: 30px;  
+    font-weight: 500;
+    border: none;  
+    border-radius: 11px;  
+    padding-left: 7px;  
+    color: white;
+    cursor: pointer;
+    background-color: rgb(31, 160, 31);   
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    background-color: grey;  
+}         
+</style>
+<body>
+   <!-- login page -->
+<form>
+   <div class="verticalLine">
+      <h2><b>LogIn Page</b></h2><br>  
+    <div class="login">    
+    <form id="login" method="get" action="login.php">    
+        <label><b>User Name     
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b>Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" name="log" id="log" value="Log In Here">       
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>    
+        <a href="#">Forgot Password</a>    
+    </form>     
+</div>    
+   </div>
+   <!-- signup page -->
+<div class="formContainer">
+<h1>Sign Up Form</h1>
+<hr>
+<label for="email"><b>Email</b></label>
+<input type="text" placeholder="Enter Email" name="email" required>
+<label for="password"><b>Password</b></label>
+<input type="password" placeholder="Enter Password" name="password" required>
+<label for="repeatPassword"><b>Repeat Password</b></label>
+<input type="password" placeholder="Repeat Password" name="repeatPassword"
+required>
+<label>
+<input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px"> Remember me
+</label>
+<p>By creating an account you agree to our <a href="#"
+style="color:rgb(13, 104, 196)">Terms & Privacy*</a><p>
+<div>
+<button type="button" class="cancel">Cancel</button>
+<button type="submit" class="signup">Sign Up</button>
+</div>
+</div>
+</form>
+</body>
+</html>
